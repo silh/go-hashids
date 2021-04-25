@@ -7,20 +7,23 @@ Go (golang) v1 implementation of http://www.hashids.org
 under MIT License (same as the original implementations)
 
 Original implementations by [Ivan Akimov](https://github.com/ivanakimov)
+Original Golang implementation by [Rémi Gillig](https://github.com/speps)
 
 ### Setup
-<pre>go get github.com/speps/go-hashids</pre>
+Starting with 2.0.1 supports go modules.
+
+<pre>go get github.com/silh/go-hashids@v2.0.1</pre>
 
 CLI tool :
 
-<pre>go get github.com/speps/go-hashids/cmd/hashid</pre>
+<pre>go get github.com/silh/go-hashids/cmd/hashid</pre>
 
 ### Example
 ```go
 package main
 
 import "fmt"
-import "github.com/speps/go-hashids"
+import "github.com/silh/go-hashids"
 
 func main() {
 	hd := hashids.NewData()
